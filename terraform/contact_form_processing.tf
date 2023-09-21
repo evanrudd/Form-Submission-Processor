@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_lambda_function" "contact_form_processor" {
-  filename      = "/Users/evanrudd/Code/Projects/Contact Form AWS Lambda and Terraform/aws_contact_form_processor.zip"
+  filename      = "FILEPATH!/aws_contact_form_processor.zip"
   function_name = "ContactFormProcessor"
   role          = aws_iam_role.lambda_role.arn
   handler = "lambdafunction.lambda_handler"
